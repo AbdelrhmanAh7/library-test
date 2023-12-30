@@ -41,81 +41,81 @@ export class AppComponent {
         inputType: inputType.text,
       } as ITextInput,
     },
-    // {
-    //   ...this.MUK_DEFAULT_FORM_CONTROL,
-    //   rows: 5,
-    //   columns: 5,
-    //   controller: {
-    //     name: 'text',
-    //     controller: new FormControl('', Validators.required),
-    //   },
-    //   type: formControlType.textarea,
-    //   controllerSpecification: {
-    //     inputType: inputType.text,
-    //   } as ITextInput,
-    // } as IFormControl<Filed>,
-    // {
-    //   ...this.MUK_DEFAULT_FORM_CONTROL,
-    //   controller: {
-    //     name: 'date',
-    //     controller: new FormControl('', Validators.required),
-    //   },
-    //   placeholder: 'Date',
-    //   type: formControlType.date,
-    //   controllerSpecification: {
-    //     inputType: inputType.text,
-    //   } as ITextInput,
-    // },
-    // {
-    //   ...this.MUK_DEFAULT_FORM_CONTROL,
-    //   isObservable: false,
-    //   isDependent: true,
-    //   dependentKey: 'id',
-    //   isMultiple: false,
-    //   controller: {
-    //     name: 'role',
-    //     label: 'Role',
-    //     controller: new FormControl('', Validators.required),
-    //   },
-    //   placeholder: 'Select user role',
-    //   type: formControlType.select,
-    //   controllerSpecification: {
-    //     isObservable: false,
-    //     isDependent: true,
-    //     dependentKey: 'id',
-    //     isMultiple: false,
-    //     options: [
-    //       {name: 'Admin', value: 'Admin'},
-    //       {
-    //         name: 'User',
-    //         value: 'User',
-    //       },
-    //     ],
-    //     key: 'name',
-    //     value: 'value',
-    //   } as IDropDownInput,
-    // } as IFormControl<Filed>,
-    // {
-    //   controller: {
-    //     name: 'contactNumber',
-    //     controller: new FormControl('', Validators.required),
-    //     label: 'Contact Number',
-    //   },
-    //   containerStyle: 'mb-3',
-    //   placeholder: 'Contact Number',
-    //   type: formControlType.input,
-    //   controllerSpecification: {
-    //     inputType: inputType.phoneNumber,
-    //     change: (e: any) => {
-    //       console.log('e', e.target.value);
-    //     },
-    //   } as IPhoneNumberInput,
-    //   isAutofocus: false,
-    //   isAutocomplete: true,
-    //   columnSize: 12,
-    //   translateLangType: null,
-    //   controllerStyle: null,
-    // } as IFormControl<Filed>,
+    {
+      ...this.MUK_DEFAULT_FORM_CONTROL,
+      rows: 5,
+      columns: 5,
+      controller: {
+        name: 'text',
+        controller: new FormControl('', Validators.required),
+      },
+      type: formControlType.textarea,
+      controllerSpecification: {
+        inputType: inputType.text,
+      } as ITextInput,
+    } as IFormControl<Filed>,
+    {
+      ...this.MUK_DEFAULT_FORM_CONTROL,
+      controller: {
+        name: 'date',
+        controller: new FormControl('', Validators.required),
+      },
+      placeholder: 'Date',
+      type: formControlType.date,
+      controllerSpecification: {
+        inputType: inputType.text,
+      } as ITextInput,
+    },
+    {
+      ...this.MUK_DEFAULT_FORM_CONTROL,
+      isObservable: false,
+      isDependent: true,
+      dependentKey: 'id',
+      isMultiple: false,
+      controller: {
+        name: 'role',
+        label: 'Role',
+        controller: new FormControl('', Validators.required),
+      },
+      placeholder: 'Select user role',
+      type: formControlType.select,
+      controllerSpecification: {
+        isObservable: false,
+        isDependent: true,
+        dependentKey: 'id',
+        isMultiple: false,
+        options: [
+          {name: 'Admin', value: 'Admin'},
+          {
+            name: 'User',
+            value: 'User',
+          },
+        ],
+        key: 'name',
+        value: 'value',
+      } as IDropDownInput,
+    } as IFormControl<Filed>,
+    {
+      controller: {
+        name: 'contactNumber',
+        controller: new FormControl('', Validators.required),
+        label: 'Contact Number',
+      },
+      containerStyle: 'mb-3',
+      placeholder: 'Contact Number',
+      type: formControlType.input,
+      controllerSpecification: {
+        inputType: inputType.phoneNumber,
+        change: (e: any) => {
+          console.log('e', e.target.value);
+        },
+      } as IPhoneNumberInput,
+      isAutofocus: false,
+      isAutocomplete: true,
+      columnSize: 12,
+      translateLangType: null,
+      controllerStyle: null,
+    } as IFormControl<Filed>,
   ];
   buttons: IButton[] = [
     {
